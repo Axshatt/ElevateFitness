@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🏋️ Elevate Fitness
 
-## Getting Started
+![Elevate Fitness Banner](./public/banner.png)
 
-First, run the development server:
+> **Elevate Fitness** is a premium, high-conversion gym website built for the modern fitness industry. Featuring a minimalist aesthetic, localized content for India (Gorakhpur), and a robust admin dashboard.
+
+---
+
+## 🚀 Features
+
+-   **🎨 Premium Aesthetic**: Minimalist design with `Tailwind CSS v4` and `Framer Motion` animations.
+-   **🇮🇳 Localization**: Content fully adapted for the Indian market (Currency: ₹, Local Trainers, Hinglish Reviews).
+-   **🔐 Authentication**: Secure User & Admin login via `Clerk` and Custom Middleware.
+-   **💳 Payments**: Demo Checkout flow with Mock Payment Gateway and Invoice generation.
+-   **📊 Admin Dashboard**: Manage Leads, Schedule, and Plans from a secure backend.
+-   **📱 Mobile First**: Fully responsive design for all devices.
+
+## 📸 Screenshots
+
+| Home Page | Admin Dashboard |
+| :---: | :---: |
+| ![Home Page](https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1470&auto=format&fit=crop) | ![Admin Dashboard](https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1470&auto=format&fit=crop) |
+| *Premium Landing Page* | *Analytics & Management* |
+
+| Class Schedule | Checkout Flow |
+| :---: | :---: |
+| ![Classes](https://images.unsplash.com/photo-1571902943202-507ec2618e8f?q=80&w=1475&auto=format&fit=crop) | ![Checkout](https://images.unsplash.com/photo-1556742049-0cfed4f7a07d?q=80&w=1470&auto=format&fit=crop) |
+| *Interactive Timetable* | *Secure Payment Demo* |
+
+
+## 🛠️ Tech Stack
+
+-   **Framework**: [Next.js 16](https://nextjs.org/) (App Router)
+-   **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
+-   **Animations**: [Framer Motion](https://www.framer.com/motion/)
+-   **Database**: [MongoDB Atlas](https://www.mongodb.com/)
+-   **Authentication**: [Clerk](https://clerk.com/) + Custom Middleware
+-   **Icons**: [Lucide React](https://lucide.dev/)
+
+## ⚡ Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Axshatt/ElevateFitness.git
+cd ElevateFitness
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Setup Environment Variables
+
+Create a `.env.local` file in the root:
+
+```env
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_...
+CLERK_SECRET_KEY=sk_test_...
+MONGODB_URI=mongodb+srv://...
+```
+
+### 4. Run the Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit `http://localhost:3000` to see the site!
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🔐 Admin Access
 
-## Learn More
+-   **URL**: `/admin/login`
+-   **Username**: `admin`
+-   **Password**: `admin`
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Built with ❤️ by **Akshat Singh**
